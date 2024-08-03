@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+	<LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Examples.Patterns.Operations.Abstractions\**" />
+    <Compile Remove="Examples.Patterns.Operations.DependencyInjection\**" />
+    <Compile Remove="Examples.Patterns.Operations\**" />
+    <Compile Remove="Syncronous\**" />
+    <EmbeddedResource Remove="Examples.Patterns.Operations.DependencyInjection\**" />
+    <EmbeddedResource Remove="Examples.Patterns.Operations\**" />
+    <EmbeddedResource Remove="Syncronous\**" />
+    <None Remove="Examples.Patterns.Operations.Abstractions\**" />
+    <None Remove="Examples.Patterns.Operations.DependencyInjection\**" />
+    <None Remove="Examples.Patterns.Operations\**" />
+    <None Remove="Syncronous\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Bytz.Patterns.Operations.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bytz.Common" Version="1.0.1" />
+  </ItemGroup>
+
+</Project>
